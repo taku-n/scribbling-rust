@@ -1,0 +1,6 @@
+[book]
+authors = ["Takuto Nanjo"]
+language = "ja"
+multilingual = false
+src = "src"
+title = "なぐりがき Rust"
