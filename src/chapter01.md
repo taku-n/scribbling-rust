@@ -13,6 +13,7 @@ $ cd hello
 ```
 
 Cargo.toml をつぎのように編集します  
+[dependencies] の下に 2行 追加するだけです  
 
 ```no_compile
 [package]
@@ -26,6 +27,7 @@ anyhow = { version = "1" }
 ```
 
 src/main.rs をつぎのように編集します  
+インデントはスペース 4つ です  
 
 ```rust
 use anyhow::*;
@@ -54,7 +56,7 @@ $ echo $?
 
 今度はつぎのようにしてみます  
 
-```rust,should_panic
+```rust, should_panic
 use anyhow::*;
 
 #[tokio::main]
@@ -112,3 +114,9 @@ async fn main() -> Result<()> {
 ```
 
 おまじないだらけですが、こちらが今後のベースとなります  
+
+いまは  
+main() の下から実行されること  
+Ok を返すことで成功 (0) を  
+Err を返すことで失敗 (1) とエラーメッセージを  
+シェルに伝えることができることがわかれば十分です  
