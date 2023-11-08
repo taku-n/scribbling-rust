@@ -120,7 +120,7 @@ async fn main() -> Result<()> {
 
 さて、ここまではよくあるプログラミング言語という感じかと思いますが、つぎの例では Rust らしさが見えます  
 
-```no_compile
+```rust, compile_fail
 use anyhow::*;
 
 #[tokio::main]
@@ -222,7 +222,7 @@ Ok(()) にもある () という値だけを入れることができます
 
 main.rs をつぎのようにします  
 
-```no_compile
+```rust, compile_fail
 mod mod1;
 mod mod2;
 
@@ -285,7 +285,7 @@ pub async fn hello() {
 呼び出してみます  
 src/main.rs を追加して、つぎのようにします  
 
-```no_compile
+```rust, compile_fail
 use anyhow::*;
 
 #[tokio::main]
@@ -325,7 +325,7 @@ hellocrate = { path = "../hellocrate" }
 
 src/main.rs をつぎのようにします  
 
-```no_compile
+```rust, compile_fail
 use anyhow::*;
 
 #[tokio::main]
