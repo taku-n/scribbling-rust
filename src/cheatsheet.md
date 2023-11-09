@@ -3,8 +3,8 @@
 ## main 関数
 
 ```no_compile
-$ cargo add tokio@1 --features="full"
-$ cargo add anyhow@1
+cargo add tokio@1 --features="full"
+cargo add anyhow@1
 ```
 
 ```rust
