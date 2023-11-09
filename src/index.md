@@ -16,6 +16,9 @@ edition = "2021"
 hello, world  
 
 [Chapter 2](chapter02.md)  
-コメント 変数 if for ベクター ブロック 関数 モジュール クレート
+コメント 変数 if for ベクター ブロック 関数 モジュール クレート  
 
-[Chapter 3](chapter03.md)
+[Chapter 3](chapter03.md)  
+rustup Cargo 単体テスト  
+
+[Chapter 4](chapter04.md)  
