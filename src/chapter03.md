@@ -1,4 +1,4 @@
-# Chapter 03
+# Chapter 3
 
 ## rustup
 

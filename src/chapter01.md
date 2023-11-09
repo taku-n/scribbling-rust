@@ -1,6 +1,6 @@
 # なぐりがき Rust
 
-## Chapter 01
+## Chapter 1
 
 ### hello, world
 
