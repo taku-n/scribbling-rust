@@ -165,6 +165,26 @@ For more information about this error, try `rustc --explain E0382`.
 for でベクターを使ったあと、さらにベクターを使うことができません  
 こちらはいまのところ解消できませんので、先へ進みます  
 
+## ブロック
+
+```rust
+use anyhow::*;
+
+#[tokio::main]
+async fn main() -> Result<()> {
+    async {
+        dbg!("hello, block");
+    }.await;
+
+    //Err(anyhow!("Omg!"))
+    Ok(())
+}
+```
+
+```no_compile
+[src/main.rs:6] "hello, block" = "hello, block"
+```
+
 ## 関数
 
 2つ の整数で掛け算をし、その答えを返す関数 multiply() をつくります  
