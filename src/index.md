@@ -15,7 +15,7 @@ edition = "2021"
 [Chapter 1](chapter01.md)  
 hello, world  
 
-[Chapter 2](./chapter02.md)  
+[Chapter 2](chapter02.md)  
 コメント 変数 if for ベクター ブロック 関数 モジュール クレート
 
-[Chapter 3](./chapter03.md)
+[Chapter 3](chapter03.md)
