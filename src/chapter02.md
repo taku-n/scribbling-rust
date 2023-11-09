@@ -375,7 +375,7 @@ cargo new のときに
 つくってくれますが、つくってくれなかった方を自分でつくれば --lib があってもなくても違いはありません  
 
 自身のクレートを指し示したいときは固有のクレート名は使いません  
-常に crate を使います  
+crate を使います  
 たとえば multiply() は、つぎのようにしても動きます  
 
 ```rust
@@ -403,3 +403,18 @@ async fn multiply(x: i32, y: i32) -> i32 {
 ```
 
 crate::multiply() は自身のクレートの multiply() であることを明示しています  
+
+例外として、lib.rs があり、同じディレクトリの main.rs から呼び出す場合、固有のクレート名を使います  
+外から呼び出せるかを中から試せるようになっているというイメージです  
+
+以降このドキュメントではクレートのルートディレクトリを crate で表すことにします  
+たとえば main.rs は crate/src/main.rs です  
+
+固有のクレート名とは Cargo.toml の [package] の name です  
+この name は crate/target/debug につくられるバイナリーや静的ライブラリーの名前になります  
+たとえば name が hello なら  
+バイナリーが crate/target/debug/hello  
+静的ライブラリーが crate/target/debug/libhello.rlib  
+となります  
+
+ちなみに crate/target/debug/libhello.d は Makefile です  
