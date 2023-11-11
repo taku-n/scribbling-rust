@@ -407,4 +407,18 @@ let mut y = &mut x;
 y のデーターは x への可変参照 から変更できます  
 *y は x のデーターを変更できます  
 
+```rust, compile_fail
+let x = Box::new(3);
+*x = 19;  // Compile Error
+```
+
+Box の中を変更できません  
+
+```rust
+let mut x = Box::new(3);
+*x = 19;
+```
+
+Box の中を変更できます  
+
 並行処理 &mut を & へ代入  
