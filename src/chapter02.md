@@ -14,7 +14,7 @@ async fn main() -> Result<()> {
 }
 ```
 
-## 変数
+## 可変変数
 
 ```rust
 use anyhow::*;
