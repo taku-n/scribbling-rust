@@ -21,7 +21,7 @@ $ rustup update
 ```no_compile
 $ cargo new cargoadd
 $ cd cargoadd
-$ cargo add tokio@1 --features="full"
+$ cargo add tokio@1 --features=full
 $ cargo add anyhow@1
 $ cat Cargo.toml
 ```
