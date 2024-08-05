@@ -5,10 +5,12 @@
 ```no_compile
 cargo add tokio@1 --features="full"
 cargo add anyhow@1
+cargo add async-recursion@1
 ```
 
 ```rust
 use anyhow::*;
+use async_recursion::async_recursion;
 
 #[tokio::main]
 async fn main() -> Result<()> {
@@ -16,6 +18,10 @@ async fn main() -> Result<()> {
 
     //Err(anyhow!("Omg!"))
     Ok(())
+}
+
+#[async_recursion]
+async fn recursive() {
 }
 ```
 
