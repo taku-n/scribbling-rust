@@ -10,7 +10,7 @@ cargo add async-recursion@1
 
 ```rust
 use anyhow::*;
-use async_recursion::async_recursion;
+use async_recursion::*;
 
 #[tokio::main]
 async fn main() -> Result<()> {
