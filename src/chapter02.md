@@ -277,7 +277,7 @@ $ cargo run
 [src/mod1.rs:1] "mod1" = "mod1"
 [src/mod2/mod21.rs:1] "mod21" = "mod21"
 ```
-### mod 間で呼ぶ
+### モジュール間で呼ぶ
 
 ```no_compile
 .
