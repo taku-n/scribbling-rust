@@ -277,6 +277,35 @@ $ cargo run
 [src/mod1.rs:1] "mod1" = "mod1"
 [src/mod2/mod21.rs:1] "mod21" = "mod21"
 ```
+### モジュール間で呼ぶ
+
+```no_compile
+.
+|-- main.rs
+|-- mod1.rs
+`-- mod2.rs
+```
+
+main.rs  
+
+```no_compile
+mod mod1;
+mod mod2;
+```
+
+mod1.rs  
+
+```no_compile
+use super::mod2;
+
+mod2::mod2f();
+```
+
+mod2.rs  
+
+```no_compile
+pub async fn mod2f() {}
+```
 
 ## クレート
 
